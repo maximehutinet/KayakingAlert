@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col"] {
+    display: block;
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.col1 {
+  height: auto;
+  width: 8.33%;
+}
+.col2 {
+  height: auto;
+  width: 16.66%;
+}
+.col3 {
+  height: auto;
+  width: 25%;
+}
+
+.col4 {
+  height: auto;
+  width: 33.33%;
+}
+
+.col5 {
+  height: auto;
+  width: 41.66%;
+}
+
+.col6 {
+  height: auto;
+  width: 50%;
+}
+
+.col7 {
+  height: auto;
+  width: 58.33%;
+}
+
+.col8 {
+  height: auto;
+  width: 66.66%;
+}
+
+.col9 {
+  height: auto;
+  width: 75%;
+}
+
+.col10 {
+  height: auto;
+  width: 83.33%
+}
+
+.col11 {
+  height: auto;
+  width: 91.66%
+}
+
+.col12 {
+  height: auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  margin-right: -1%;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-bottom: 1%;
+  height: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.table-hover td, th {
+    border: 0.1rem solid #dddddd;
+    text-align: left;
+    padding: 1%;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #D2D4DB;
+  color : white;
+}
+
+.table-hover thead {
+    background-color: grey;
+    color: white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8%;
+}
+
+.table-classic td, th {
+    border: 0.1rem solid #dddddd;
+    text-align: left;
+    padding: 1%;
+}
+
+.table-classic thead {
+    background-color: grey;
+    color: white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8%;
+}
+
+.table-striped td, th {
+    border: 0.1rem solid #dddddd;
+    text-align: left;
+    padding: 1%;
+}
+
+.table-striped thead {
+    background-color: grey;
+    color: white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8%;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #D2D4DB;
+    color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-img {
+  border-radius: 8%;
+}
+
+.circled-img {
+  border-radius: 50%;
+}
+
+.hover-img:hover {
+  opacity: 0.5;
+}
+
+.badge{
+  color: white;
+  border-radius: 0.5em;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.badge-round{
+  color: white;
+  border-radius: 50%;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.badge-right{
+  float:right
+}
+
+.badge-reverse:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.badge1{
+  background-color: #0E74DB;
+}
+
+.badge1[href]:hover{
+  background-color: #2783FC;
+}
+
+.badge2{
+  background-color: #A73EDB;
+}
+
+.badge2[href]:hover{
+  background-color: #E61CFC;
+}
+
+.badge-success{
+  background-color: #6EDB1B;
+}
+
+.badge-success[href]:hover{
+  background-color: #A6FC36;
+}
+
+.badge-important{
+  background-color: #FF8B3E;
+}
+
+.badge-important[href]:hover{
+  background-color: #FCC33D;
+}
+
+.badge-warning{
+  background-color: #DB0101;
+}
+
+.badge-warning[href]:hover{
+  background-color: #FF5050;
+}
+
+.badge-info{
+  background-color: #1DFFC3;
+}
+
+.badge-info[href]:hover{
+  background-color: #81FCDB;
+}
+
+.list-classic {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-classic a:first-child,li:first-child {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.list-classic a:last-child,li:last-child {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.list-classic-item {
+  position: relative;
+  display: block;
+  padding: 2% 2%;
+  margin-bottom: -1%;
+  background-color: #fff;
+  border: 0.1rem solid #A0A4A3;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.list-classic-item[href]:hover{
+  background-color: #0E74DB;
+  color: white;
+}
+
+.list-classic-item[href]:hover > .badge-round{
+  background-color: #fff;
+  color: black;
+}
+
+.cardi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0.1rem solid #A0A4A3;
+  border-radius: 0.5em;
+  height: auto;
+}
+
+.cardi-header {
+  padding-left: 7%;
+  border-bottom: 0.1rem solid #A0A4A3;
+  background-color: #D2D4DB;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+
+}
+
+.cardi-body {
+  display: block;
+  padding : 7%;
+  height: auto;
+}
+
+.cardi-text {
+  margin-bottom: 10%;
+}
+
+.cardi-img {
+  margin-bottom: 10%;
+}
+
+.button {
+  margin: 5%;
+  padding: 5% 30%;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion {
+  background-color: #0E74DB;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:first-child {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.accordion-bottom {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.active:not(.accordion-bottom), .accordion:hover:not(.accordion-bottom) {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0E74DB;
+  border-radius: 0.5em;
+}
+
+.navbar li {
+  float: left;
+  position: sticky;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active-nav {
+  background-color: #ccc;
+}
